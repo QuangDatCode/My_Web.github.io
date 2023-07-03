@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div, li{
+    /* border:1px solid; */
+    /* padding:5px; */
+} 
+#logo {
+    height: 186px;
+    width: auto;
+}
+.content {    
+    width:900px;
+    margin:0 auto;
+    position: relative;
+    overflow: auto;
+}
+.row50-50{
+    width: 48%;
+    float: left;
+    display: inline-table;
+}
+.row{
+    overflow: auto;
+}
+.header{
+    height: 765px;
+    background-image: url(../images/head-background.jpg);
+    background-size: cover;
+}
+.row70{
+    width: 65%; 
+    float: left;
+    display: inline-table;
+}
+.row30{
+    width: 25%;
+    float: left;
+    display: inline-table;
+}
+.inf{
+    height: 450px;
+    width: 365px;
+}
+#Hotline {
+    font-size: 2rem;
+    font-weight: bold;
+    color:#fff;
+    background-color: #49A333;
+    text-align: center;
+    border-radius: 2px;
+    padding:10px;
+    margin:0 auto;
+    margin-top:50px;
+    width:50%;
+}
+.row img {
+    width: 100%;
+    height: auto;
+}
+.big {
+    font-size: 1.7rem;
+}
+#center{
+    text-align: center;
+    color: #1f6533;
+}
+.green{
+    color: #62a526;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.row50-50 > input{
+    width: 95%;
+    height: auto;
+}
+.button {
+    width: 95%;
+    text-align: center;
+    background-color: #2e6e03;
+    color: #fff;
+    float: right;
+}
+li {
+    list-style-type: none;
+}
+.l{
+    float: left;
+}
+.r{
+    float: right;
+}
+.boid{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.leg {
+    background-color: #80AD54;
+    color: #fff;
+}
+.ender{
+    background-color: #DBDF84;
+}
+.body img {
+    border: 2px dashed #0DC212;
+    border-radius: 3%;
+}
+.content > div{
+    margin: 15px 0 15px 0;
+}
+.ender input ,.ender div{
+    padding: 10px;
+}
+.ender .row50-50 {
+    margin: 5px;
+}
+.haveboder{
+    border-bottom: 2px solid #fff;
+}
+.inf > li {
+    color: #fff;
+    margin: 5px;
+}
+.inf{
+    background-color: #678B37;
+    padding: 20px;
+    border: 10px solid #CED086;
+    box-sizing: border-box;
+  
+}
+.bigaandbold {
+    font-size: 2rem;
+    text-align: center;
+}
+.italics{
+    text-align: center;
+    font-style: italic;
+}
+.inf > .text{
+    width: 100%;
+    border-top:2px #5F8133 solid;
+    border-bottom: 2px #95AE73 solid;
+    border-left: none ;
+    border-right: none ;
+    background-color:#678B37; ;
+    margin: 15px 0 15px 0;
+}
+.inf > .button {
+    padding: 15px 10px 15px 10px;
+    background-color: #C5D301;
+    display: inline;
+}
+.leg .haveboder{
+    border-bottom: 2px solid #F4E3E3;
+}
+body  li {
+    margin-bottom: 15px;
+}
+body > div {
+    padding-top: 15px;
+}

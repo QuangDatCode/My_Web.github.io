@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    font-size: 13px;
+}
+/*div ,section{
+     tam thoi  
+     outline: 2px solid green;
+}*/
+:root{
+    --container-width:100%;
+    --section-width:980px;
+    --color-darkblue:#112141;
+    --color-orange:#BA9066;
+    --color-darkred: #B70F0B;
+    --color-gray:#646464;
+}
+body {
+    background-image: url("../images/bg-top.jpg"), url("../images/bg-bottom.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, bottom center;
+    background-color: #F2F2F2;
+
+}
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+.container{
+    width: var(--container-width);
+    position: relative;
+    overflow: auto;
+}
+section {
+    width: var(--section-width);
+    position: relative;
+    margin: 0 auto;
+}
+#menu {
+    display: flex;
+    justify-content: space-between; /* dàn điều */
+    margin-top: 20px;
+}
+#menu .space{
+    width: 200px !important;
+}
+#menu a {
+    color: #fff;
+    font-family: Cambria;
+    font-size: 1.1rem;
+}
+#menu > li {
+    border-right: 1px solid rgba(255,255,255,0.5);
+    padding-right: 15px;
+}   
+#menu > li:last-child {
+    border-right: none;
+}
+#section-1{
+    margin-top: 500px;
+    display: grid;
+    grid-template-columns: 240px 490px 260px;
+    column-gap: 5px;
+    /* lưu kích thước cột */
+    background-color: var(--color-darkblue);
+    border: 2px solid 
+}
+#long-den{
+    position: absolute;
+    top: 0;
+    left: -80px;
+} 
+.left-buttons{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:  125px 62px 62px;
+    row-gap: 2px;
+    
+}
+#tai-game {
+    background-image: url(../images/btn_taigame.jpg);
+}
+#dang-ky , #nap-the {
+    background-image: url(../images/buttons-left.png);
+}
+#dang-ky:hover{
+    background-position: -248px -2px ;
+    opacity: 1;
+}
+#dang-ky{
+    background-position: 0 -2px;
+}
+#nap-the{
+    background-position: 0 -66px;
+}
+#nap-the:hover{
+    background-position: -248px -66px ;
+    opacity: 1;
+}
+.right-buttons{
+    display: grid;
+    grid-template-columns: 113px auto;
+    grid-template-rows: 103px 103px 38px;
+    gap :4px;
+    padding-left: 7px;
+}
+#giang-ho ,
+#ho-tro,
+#nap-vang,
+#nap-vip{
+    background-image: url(../images/buttons-right.png);
+    background-repeat: no-repeat;
+}
+#giang-ho {
+    background-position: 0 -8px;
+}
+#ho-tro {
+    background-position: -118px -8px;
+}
+#nap-vang{
+    background-position: 0 -120px;
+}
+#nap-vip{
+    background-position: -118px -120px;
+}
+#hotline{
+    /* tính theo đường kẻ */
+    background-image: url(../images/hotline.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-column: 1/3;
+}
+
+#section-2{
+    display: grid;
+    margin-top: 5px 0 5px 0;
+    grid-template-columns: 740px 232px;
+    column-gap: 8px;
+}
+#section-2-right-buttons {
+    display: grid;
+    border: 5px solid var(--color-darkblue);
+    background-color:var(--color-darkblue);
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5,52px);
+    row-gap: 5px;
+}
+#bao-dien,
+#mon-phai,
+#tan-thu,
+#vo-hoc ,
+#pvc-pet {
+    background-image: url(../images/links-right.png);
+    background-repeat: no-repeat;
+}
+#bao-dien {
+    background-position: 0px 0px;
+}
+#mon-phai {
+    background-position: 0px -59px;
+}
+#tan-thu {
+    background-position: 0px -118px;
+}
+#vo-hoc {
+    background-position: 0px -171px;
+}
+#pvc-pet {
+    background-position: 0px -223px;
+}
+#section-2-top-buttons{
+    display: grid;
+    grid-template-rows: 84px;
+    grid-template-columns: repeat(3,243px);
+    column-gap: 5px;
+}
+#cuu-am-lenh ,
+#vinh-danh-vip,
+#nhap-vip-code {
+    background-image: url(../images/cuuamlenh-vip-giftcode.png);
+    background-repeat: no-repeat;
+}
+#cuu-am-lenh {
+    background-position: 0px 0px;
+}
+#vinh-danh-vip {
+    background-position: -248px 0px;
+}
+#nhap-vip-code {
+    background-position: -499px 0px;
+}
+.post{
+    background-image: url(../images/news-header-bg.png);
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    border: 5px solid var(--color-darkblue);
+    border-top: 0px;
+    
+}
+.post div {
+    margin: 10px 10px 25px 6px;
+}
+.post-header{
+    box-sizing: border-box;
+}
+.post-category {
+    display: flex;
+    padding:30px 0 10px 0;
+    margin: 0 0 0 0;
+}
+.post-category > li > a {
+    color: #c7a877;
+    padding: 0 15px 0 15px;
+}
+.post-category > li:first-child > a{
+    color: white ;
+}
+ul {
+    list-style: none;
+}
+.post-item {
+    display: flex;
+   
+}
+.post img {
+    border: 5px  solid var(--color-orange);
+    width: 138px;
+    height: 138px;
+    margin-right:  10px; ;
+}
+.post-body h1,.post-body a {
+    color:  var(--color-darkred);
+    text-transform : uppercase;
+    font-size: larger
+}
+.post-body h1 {
+    border-left: 5px solid var(--color-darkred);
+    padding-left: 5px;
+}
+.post-links{
+    display: flex;
+    justify-content: flex-end;
+}
+.post-links a {
+    background-color: var(--color-darkblue);
+    padding: 10px 5px 10px 5px;
+    color: var(--color-gray);
+    border: 3px solid var(--color-gray);
+    margin: 5px;
+    font-size: medium;
+}
+#footer{
+    display: flex;
+    margin-top: 100px;
+}
+.post-content a{
+    margin-bottom: 242px;
+}
+#footer p {
+    padding: 5px;
+    text-align: center;
+}
+#footer :last-child {
+    padding-bottom: 20px ;
+}
+#section-2 {
+    padding-top: 7px;
+}
+.small {
+    margin: 5px 0 5px 0;
+    color: var(--color-gray);
+    font-size: small;
+    font-style: italic;
+}
+#footer-info >p >a{
+    color: black;
+}
